@@ -102,6 +102,10 @@ const opContainer = document.getElementById("option");
 let answers = [];
 let dioPorco = [];
 var infoQ;
+//
+ //seleziona tutti i campi di imput
+var selezionato=false;                           //verifica che almeno un campo e` selezionato
+var contatore=0;
 
 const nq = function () {
     let nq = Math.floor(Math.random() * (questions.length) + 1)
@@ -111,21 +115,25 @@ const nq = function () {
 
 const ciclatore = function () {
     let indice = [0];
-    for (let i = 0; i < 4; i++) {
+
+    for (let i = 0; i < 1; i++) {
         let n = nq();
         console.log(n)
+
         if (indice.includes(n) == false) {
             infoQ = questions.pop(n);
             newQuestion(infoQ);
             stampa(infoQ);
+            check();
+            
         }else{indice.push(n)};
-
+        
 
 
         //clear();
     }
 }
-ciclatore();
+
 
 //la risposta corretta e` la [0]
 function newQuestion(x) {
@@ -139,18 +147,40 @@ function stampa(x) {
     let option = document.getElementById("option");
     let k=0;
     document.getElementById("question").innerHTML = x.question; //domanda
+    document.getElementById("procedi").innerHTML=`<button disabled="true" type="button"  id="succ">procedi</button>`
     answers.forEach(element => {
         
-        option.innerHTML += ` <input type="radio" name="${k}" id="${k}" 
+        option.innerHTML += ` <input onclick="check()" type="radio" name="risposta" id="${k}" 
         value="${element}"> <label for="${k}">${element}</label>` //opzioni
 
         document.getElementById("question_box").appendChild(option); //stampa
         k++; //incremento indice
+    });   
+}
+
+//check risposte
+
+const btnProcedi=document.getElementById("succ");
+function check(){
+    let risposte=document.querySelectorAll("input");
+    risposte.forEach(element => {
+        if (element.checked==true){
+            selezionato=true;
+            btnProcedi.setAttribute("disabled","false")
+
+        }
     });
     
+
 }
+
+
+
 //pulisce il campo
 function clear(){
+    document.getElementById("procedi").innerHTML=" "
     document.getElementById("option").innerHTML=" ";
     answers=[];
+    selezionato=false;
 }
+ciclatore();
