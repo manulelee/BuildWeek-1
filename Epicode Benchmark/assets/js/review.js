@@ -4,7 +4,7 @@ stars.forEach((element) => {
   element.addEventListener(
     "click",
     (rate = (event) => {
-      value = event.target.id;
+      value = parseInt(event.target.id);
       console.log(event.target);
       for (let i = 0; i < value; i++) {
         stars[i].classList.toggle("clicked");
