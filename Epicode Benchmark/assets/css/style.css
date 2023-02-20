@@ -1,21 +1,87 @@
-#logo{
-width:30em;
+body {
+  box-sizing: border-box;
+}
+#container2 {
+  text-align: center;
+  height: 80vh;
+
+  border: 2px solid black;
+}
+#result {
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+}
+#result,
+#correct,
+#message,
+#wrong {
+  display: inline-block;
+  border: 2px solid black;
+  vertical-align: middle;
+  text-align: center;
+}
+#correct,
+#wrong {
+  width: 20%;
+
+  vertical-align: middle;
+  margin: 20px;
+}
+#correct {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+#wrong {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  vertical-align: middle;
 }
 
-body{
-    background-image:url("../img/bg.jpg");
+#message {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 50%;
+  vertical-align: middle;
+
+  border-radius: 80%;
+
+  outline: 20px solid black;
 }
 
-#WPwelcome{
-font-weight: 200;
+#logo {
+  width: 30em;
 }
 
-h1{
-    font-size: 60px;
-    line-height: 0.8em;
+body {
+  background-image: url("../img/bg.jpg");
 }
 
-#container1{
-    margin-right: 6%;
-    margin-left: 6%;
+#WPwelcome {
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 0.8em;
+}
+
+#footer {
+  text-align: center;
+}
+#container1 {
+  margin-right: 6%;
+  margin-left: 6%;
 }
