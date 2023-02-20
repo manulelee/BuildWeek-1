@@ -85,3 +85,10 @@ h1 {
   margin-right: 6%;
   margin-left: 6%;
 }
+
+#stars img {
+  filter: grayscale(100%);
+}
+.clicked {
+  filter: none !important;
+}
