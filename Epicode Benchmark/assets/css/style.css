@@ -1,0 +1,21 @@
+#logo{
+width:30em;
+}
+
+body{
+    background-image:url("../img/bg.jpg");
+}
+
+#WPwelcome{
+font-weight: 200;
+}
+
+h1{
+    font-size: 60px;
+    line-height: 0.8em;
+}
+
+#container1{
+    margin-right: 6%;
+    margin-left: 6%;
+}
