@@ -4,13 +4,16 @@
 body {
   background-image: url("../img/bg.jpg");
   background-size: cover;
+  background-repeat: repeat;
   font-family: 'Inter', sans-serif;
+  font-weight: 300;
   color: white;
   font-size: 16px;
+  word-spacing: 1px;
 }
 
 #logo1 {
-  width: 150px;
+  width: 120px;
   margin-top: 24px;
   margin-bottom: 50px;
 }
@@ -101,25 +104,43 @@ p {
 }
 
 #WPwelcome {
-  font-weight: 400;
+  font-weight: 300;
 }
 #WPh1{
  line-height: 0.8em;
 }
 #wPTitle{
   margin-bottom: 2.4em;
+  letter-spacing: 3px;
 }
 
 #WPinstr{
   font-weight: 600;
   color:#D20094;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 #WPp{
   margin-bottom: 3.2em;
   margin-top: 0.5em;
-  width: 90%;
+  width: 550px;
+}
+#WPul{
+  padding-left: 1.7em;
+  margin-bottom: 2.5em;
+}
+
+
+
+#pulsante {
+  margin: 0;
+  box-shadow: -1px 0px 15px 5px #00ffff;
+  border-style: none;
+  background-color: #00ffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
 }
 
 
@@ -130,8 +151,13 @@ p {
 }
 
 #container1 {
-  margin-right: 6%;
-  margin-left: 6%;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+#WPfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #buttonRate {
