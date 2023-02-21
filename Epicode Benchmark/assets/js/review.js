@@ -7,6 +7,7 @@ stars.forEach((element) => {
       value = parseInt(event.target.id);
       console.log(event.target);
       for (let i = 0; i < value; i++) {
+        //stars[i].classList.remove("clicked");
         stars[i].classList.toggle("clicked");
         console.log(stars[i]);
       }
