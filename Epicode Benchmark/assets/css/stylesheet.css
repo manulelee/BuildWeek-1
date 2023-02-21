@@ -1,14 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
   background-image: url(../img/bg.jpg);
   background-size: 100vh;
   background-size: 100vw;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Outfit', sans-serif;
+}
+#rwStringi{
+
 }
 .logo {
-  margin-top: 2%;
-  margin-left: 3%;
+  margin-top: 24px;
   width: 150px;
 }
 #container1 {
@@ -17,14 +25,14 @@ body {
 }
 h1 {
   color: white;
-  margin-left: 3%;
+  
   font-size: 60px;
   margin-bottom: 2%;
   word-spacing: 1;
 }
 
 h3 {
-  margin-left: 3%;
+
   font-size: 16px;
   color: #d20094;
   font-weight: bolder;
@@ -32,7 +40,7 @@ h3 {
 
 p {
   color: white;
-  margin-left: 3%;
+
 }
 
 #pulsante {
@@ -71,7 +79,25 @@ p {
   background-color: #900080;
   border-color: #f3a0e9cb;
 }
+#buttonRate {
+  margin: 0;
+  float: center;
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  box-shadow:0px 3px 25px 4px rgba(0,255,255,0.27)
 
+
+
+}
 .quiz {
   display: flex;
   margin: 0.9em;
@@ -103,28 +129,38 @@ p {
   font-weight: bolder;
 }
 #container {
-  width: 80%;
+ 
   padding: 2em;
   margin: 0 auto;
 }
 
 #container2 {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  padding: 2em;
-}
 
+  justify-content: space-between;
+  align-items: center;
+}
+#containerResult{
+margin:0 auto;
+  width:80% ;
+}
 #result {
   width: 100%;
   text-align: center;
+  margin: 0 auto;
+
+ 
 }
 
 #result,
 #correct,
 #message,
 #wrong {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 2em;
+
+ 
+  
   text-align: center;
 }
 #correct,
@@ -133,23 +169,27 @@ p {
 }
 
 #correct {
-  float: left;
+ 
   text-align: left;
 }
 
 #wrong {
   text-align: right;
-  float: right;
+  
 }
 
 #message {
-  outline: 20px solid black;
-  border-radius: 80%;
-  width: 35%;
-  height: 100%;
+ border: 45px solid black;
+  
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
   margin: 2em;
   float: none;
   padding: 2em;
+  min-width: 300px;
+  min-height: 300px;
+  
 }
 
 #WPwelcome {
@@ -177,6 +217,7 @@ p {
 
 }
 #centraAll{
+  width: 70%;
   text-align: center;
   margin-right: 15%;
   margin-left: 15%;
@@ -191,3 +232,47 @@ margin-bottom: 5%;
 margin-top: 5%;
 }
 
+#result>h2{
+  margin-bottom: 0px;
+ 
+}
+#result>h3{
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+.cambiaSE{
+  font-size: 16px;
+  margin-top: 0;
+  
+}
+#cambiaInjs{
+  color:#00ffff;
+ 
+  
+}
+#message>p{
+  margin-top: 100px;
+font-size: 16px;
+}
+#wrong>h2,h3,p{
+  margin: 0;
+  color: white;
+}
+#correct>h2,h3,p{
+  margin: 0;
+  color: white;
+}
+#correct>h3,h2{
+ font-size: 40px;
+}
+#wrong>h3,h2{
+  font-size: 40px;
+ }
+
+ #correct>h2{
+  font-weight: 300;
+ }
+ #wrong>h2{
+  font-weight: 300;
+ }
