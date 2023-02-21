@@ -11,7 +11,10 @@ body {
   margin-left: 3%;
   width: 150px;
 }
-
+#container1 {
+  margin-right: 6%;
+  margin-left: 6%;
+}
 h1 {
   color: white;
   margin-left: 3%;
@@ -50,7 +53,7 @@ p {
   cursor: pointer;
   margin-bottom: 1%;
 }
-
+/*pulsanti da usare*/
 #pulsanteQuiz {
   display: inline-flex;
   margin: 0.5em;
@@ -86,6 +89,7 @@ p {
   align-items: center;
   align-content: center;
 }
+/*finish pulsantidausare*/
 #exam {
   text-align: center;
   font-size: 60px;
@@ -93,4 +97,76 @@ p {
 #centra {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+/*pagina di result alessio*/
+.summary {
+  font-size: 16px;
+  font-weight: bolder;
+}
+#container {
+  width: 80%;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+#container2 {
+  width: 100%;
+  padding: 2em;
+}
+
+#result {
+  width: 100%;
+  text-align: center;
+}
+
+#result,
+#correct,
+#message,
+#wrong {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+#correct,
+#wrong {
+  width: 20%;
+}
+
+#correct {
+  float: left;
+  text-align: left;
+}
+
+#wrong {
+  text-align: right;
+  float: right;
+}
+
+#message {
+  outline: 20px solid black;
+  border-radius: 80%;
+  width: 35%;
+  height: 100%;
+  margin: 2em;
+  float: none;
+  padding: 2em;
+}
+
+#WPwelcome {
+  font-weight: 200;
+}
+
+#footer {
+  text-align: center;
+
+  margin: 2em;
+}
+
+.clicked {
+  filter: none !important;
+}
+#stars img {
+  filter: grayscale(100%);
 }
