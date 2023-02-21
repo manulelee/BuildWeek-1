@@ -147,7 +147,7 @@ function stampa(x) {
     let option = document.getElementById("option");
     let k=0;
     document.getElementById("question").innerHTML = x.question; //domanda
-    document.getElementById("procedi").innerHTML=`<button disabled="true" type="button"  id="succ">procedi</button>`
+    
     answers.forEach(element => {
         
         option.innerHTML += ` <input onclick="check()" type="radio" name="risposta" id="${k}" 
@@ -160,13 +160,13 @@ function stampa(x) {
 
 //check risposte
 
-const btnProcedi=document.getElementById("succ");
+const btnProcedi=document.querySelector("button");
 function check(){
     let risposte=document.querySelectorAll("input");
     risposte.forEach(element => {
         if (element.checked==true){
             selezionato=true;
-            btnProcedi.setAttribute("disabled","false")
+            document.getElementById("succ").removeAttribute("disabled")
 
         }
     });
