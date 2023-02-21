@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
-  background-image: url(../img/bg.jpg);
+  background-image: url("../img/bg.jpg");
   background-size: cover;
-  font-family: "Times New Roman", Times, serif;
-  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 16px;
 }
 
 #logo {
-  margin-top: 2%;
-  margin-left: 3%;
   width: 150px;
-  text-align: start;
+  margin-top: 24px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Outfit', sans-serif;
 }
 
 h1 {
@@ -26,11 +32,13 @@ h3 {
 
   word-spacing: 1;
 }
+
 h4 {
   color: white;
   margin: 0;
   font-size: 20px;
 }
+
 .summary {
   font-size: 16px;
   font-weight: bolder;
@@ -38,7 +46,6 @@ h4 {
 
 p {
   color: white;
-  margin-left: 3%;
 }
 
 #container {
@@ -122,9 +129,11 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 #stars img {
   filter: grayscale(100%);
 }
+
 .clicked {
   filter: none !important;
 }
