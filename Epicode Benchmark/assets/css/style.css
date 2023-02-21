@@ -1,0 +1,218 @@
+body {
+
+    background-image: url(../img/bg.jpg);
+    background-size:cover;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+ 
+}
+#container2 {
+  text-align: center;
+  height: 80vh;
+
+  border: 2px solid black;
+}
+#result {
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+}
+
+}
+#logo{
+    margin-top: 2%;
+    margin-left: 3%;
+    width: 150px;
+    }
+    
+    h1,h2{
+        color: white;
+        
+        font-size: 60px;
+        
+     word-spacing: 1;
+    }
+    
+    h3{
+        margin-left: 3%;
+        font-size: 16px;
+        color: #d20094;
+        font-weight: bolder;
+    }
+    
+    p{
+        color: white;
+        margin-left: 3%;
+    }
+#container2 {
+    text-align: center;
+    height: 75vh;
+
+    
+    
+}
+
+#result {
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+
+}
+
+#correct,
+#wrong {
+  width: 20%;
+
+  vertical-align: middle;
+  margin: 20px;
+}
+#correct {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+#wrong {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  vertical-align: middle;
+}
+
+#message {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 50%;
+  vertical-align: middle;
+
+  border-radius: 80%;
+
+  outline: 20px solid black;
+}
+
+#logo {
+  width: 30em;
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+}
+
+#WPwelcome {
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 0.8em;
+}
+
+#footer {
+  text-align: center;
+}
+#container1 {
+  margin-right: 6%;
+  margin-left: 6%;
+}
+
+
+#stars img {
+  filter: grayscale(100%);
+}
+.clicked {
+  filter: none !important;
+}
+
+#result, #message, #correct, #wrong
+{
+    display: inline-block;
+    
+    vertical-align: middle;
+    text-align: center;
+      display: inline-block;
+  border: 2px solid black;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+#correct,
+#wrong {
+    width: 20%;
+
+    vertical-align: middle;
+
+    margin: 20px;
+}
+
+#correct {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+}
+
+#wrong {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    vertical-align: middle;
+
+}
+
+#message {
+
+    margin: 0;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 50%;
+    vertical-align: middle;
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 80%;
+    outline: 20px solid black;
+
+}
+
+#footer {
+
+    width: 100%;
+    text-align: center;
+    
+}
+
+#buttonRate {
+    
+        margin: 0;
+        float: center;
+     
+    
+    border: 2px solid white;
+    background-color:transparent;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    }
+
