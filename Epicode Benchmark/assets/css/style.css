@@ -1,220 +1,130 @@
 body {
-
-    background-image: url(../img/bg.jpg);
-    background-size:cover;
-    font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
- 
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
 }
+
+#logo {
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 150px;
+  text-align: start;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  margin: 0;
+}
+
+h2,
+h3 {
+  color: white;
+  margin: 0;
+  font-size: 40px;
+
+  word-spacing: 1;
+}
+h4 {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+.summary {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+p {
+  color: white;
+  margin-left: 3%;
+}
+
+#container {
+  width: 80%;
+  padding: 2em;
+  margin: 0 auto;
+}
+
 #container2 {
-  text-align: center;
-  height: 80vh;
-
-  border: 2px solid black;
+  width: 100%;
+  padding: 2em;
 }
+
 #result {
   width: 100%;
   text-align: center;
-  height: 100vh;
 }
 
-
-#logo{
-    margin-top: 2%;
-    margin-left: 3%;
-    width: 150px;
-    }
-    
-    h1,h2{
-        color: white;
-        
-        font-size: 60px;
-        
-     word-spacing: 1;
-    }
-    
-    h3{
-        margin-left: 3%;
-        font-size: 16px;
-        color: #d20094;
-        font-weight: bolder;
-    }
-    
-    p{
-        color: white;
-        margin-left: 3%;
-    }
-#container2 {
-    text-align: center;
-    height: 75vh;
-    border-style: none;
-
-    
-    
-}
-
-#result {
-    width: 100%;
-    text-align: center;
-    height: 100vh;
-
+#result,
+#correct,
+#message,
+#wrong {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
 }
 
 #correct,
 #wrong {
   width: 20%;
+}
 
-  vertical-align: middle;
-  margin: 20px;
-  border-style: none;
-}
 #correct {
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  width: 20%;
+  float: left;
+  text-align: left;
 }
+
 #wrong {
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 85%;
-  transform: translate(-50%, -50%);
-  width: 20%;
-  vertical-align: middle;
+  text-align: right;
+  float: right;
 }
 
 #message {
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25%;
-  height: 50%;
-  vertical-align: middle;
-
-  border-radius: 80%;
-
   outline: 20px solid black;
-}
-
-#logo {
-  width: 30em;
-}
-
-body {
-  background-image: url("../img/bg.jpg");
+  border-radius: 80%;
+  width: 35%;
+  height: 100%;
+  margin: 2em;
+  float: none;
+  padding: 2em;
 }
 
 #WPwelcome {
   font-weight: 200;
 }
 
-h1 {
-  font-size: 60px;
-  line-height: 0.8em;
-}
-
 #footer {
   text-align: center;
+
+  margin: 2em;
 }
+
 #container1 {
   margin-right: 6%;
   margin-left: 6%;
 }
 
+#buttonRate {
+  margin: 0;
+  float: center;
 
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 #stars img {
   filter: grayscale(100%);
 }
 .clicked {
   filter: none !important;
 }
-
-#result, #message, #correct, #wrong
-{
-    display: inline-block;
-    
-    vertical-align: middle;
-    text-align: center;
-      display: inline-block;
-  border: 2px solid black;
-  vertical-align: middle;
-  text-align: center;
-
-}
-
-#correct,
-#wrong {
-    width: 20%;
-
-    vertical-align: middle;
-
-    margin: 20px;
-}
-
-#correct {
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-}
-
-#wrong {
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    vertical-align: middle;
-
-}
-
-#message {
-
-    margin: 0;
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 25%;
-    height: 50%;
-    vertical-align: middle;
-    padding-top: 5em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 80%;
-    outline: 20px solid black;
-
-}
-
-#footer {
-
-    width: 100%;
-    text-align: center;
-    
-}
-
-#buttonRate {
-    
-        margin: 0;
-        float: center;
-     
-    
-    border: 2px solid white;
-    background-color:transparent;
-    font-weight: bolder;
-    font-size: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
-    padding-top:10px ;
-    padding-bottom: 10px;
-    }
-
