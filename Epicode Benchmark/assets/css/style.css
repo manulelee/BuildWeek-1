@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 body {
-  background-image: url(../img/bg.jpg);
+  background-image: url("../img/bg.jpg");
   background-size: cover;
-  font-family: "Times New Roman", Times, serif;
-  box-sizing: border-box;
+  background-repeat: repeat;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 16px;
+  word-spacing: 1px;
 }
 
-#logo {
-  margin-top: 2%;
-  margin-left: 3%;
-  width: 150px;
-  text-align: start;
+#logo1 {
+  width: 120px;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Outfit', sans-serif;
 }
 
 h1 {
@@ -26,11 +36,13 @@ h3 {
 
   word-spacing: 1;
 }
+
 h4 {
   color: white;
   margin: 0;
   font-size: 20px;
 }
+
 .summary {
   font-size: 16px;
   font-weight: bolder;
@@ -38,7 +50,6 @@ h4 {
 
 p {
   color: white;
-  margin-left: 3%;
 }
 
 #container {
@@ -93,8 +104,65 @@ p {
 }
 
 #WPwelcome {
-  font-weight: 200;
+  font-weight: 300;
 }
+#WPh1{
+ line-height: 0.8em;
+}
+#wPTitle{
+  margin-bottom: 2.4em;
+  letter-spacing: 3px;
+}
+
+#WPinstr{
+  font-weight: 600;
+  color:#D20094;
+  font-size: 24px;
+}
+
+#WPp{
+  margin-bottom: 3.2em;
+  margin-top: 0.5em;
+  width: 550px;
+}
+
+#WPul{
+  padding-left: 1.7em;
+  margin-bottom: 4em;
+  letter-spacing: 0.03em;
+}
+
+#WPpromise{
+  -webkit-appearance: none;
+  appearance: none;
+ width: 30px;
+ height: 30px;
+   cursor: pointer;
+   background-image: url(images/default.jpg);
+   vertical-align:middle;
+}
+
+#WPbtn{
+  background: transparent;
+  outline: none;
+  border:1px solid white;
+  width:24px;
+  height:24px;
+}
+
+
+#pulsante {
+  margin: 0;
+  box-shadow: -1px 0px 15px 5px #00ffff;
+  border-style: none;
+  background-color: #00ffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #0b1f47;
+} 
+
 
 #footer {
   text-align: center;
@@ -103,8 +171,13 @@ p {
 }
 
 #container1 {
-  margin-right: 6%;
-  margin-left: 6%;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+#WPfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #buttonRate {
@@ -122,9 +195,11 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 #stars img {
   filter: grayscale(100%);
 }
+
 .clicked {
   filter: none !important;
 }
