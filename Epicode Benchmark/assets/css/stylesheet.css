@@ -4,7 +4,7 @@ body{
     background-image: url(../img/bg.jpg);
     background-size:100vh ;
     background-size: 100vw;
- font-family: 'Noto Sans', sans-serif;;
+ font-family: 'Noto Sans', sans-serif;
 }
 .logo{
 margin-top: 2%;
@@ -27,7 +27,7 @@ h3{
     font-weight: bolder;
 }
 
-p{
+ul,p{
     color: white;
     margin-left: 3%;
 }
@@ -97,4 +97,8 @@ border-color: #f3a0e9cb;
 #centra{
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.SOTTO{
+    margin-left: 3%;
 }
