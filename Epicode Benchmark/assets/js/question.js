@@ -82,6 +82,7 @@ const questions = [
   },
 ];
 
+
 var randomNums = [];
 var procedi = document.getElementById("succ");
 let i = 0;
@@ -89,6 +90,11 @@ var scelta;
 var selezionato = false; // SEMAFORO - verifica che almeno un campo e` selezionato
 var score = 0;
 var totale = 0;
+
+
+var selezionato=false;                           //verifica che almeno un campo e` selezionato
+var contatore=0;
+
 
 // 1) generazione numero casuale ok
 const nq = function () {
