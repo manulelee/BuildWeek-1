@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
   background-image: url("../img/bg.jpg");
@@ -9,9 +9,10 @@ body {
   font-size: 16px;
 }
 
-#logo {
+#logo1 {
   width: 150px;
   margin-top: 24px;
+  margin-bottom: 50px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -100,8 +101,27 @@ p {
 }
 
 #WPwelcome {
-  font-weight: 200;
+  font-weight: 400;
 }
+#WPh1{
+ line-height: 0.8em;
+}
+#wPTitle{
+  margin-bottom: 2.4em;
+}
+
+#WPinstr{
+  font-weight: 600;
+  color:#D20094;
+  font-size: 30px;
+}
+
+#WPp{
+  margin-bottom: 3.2em;
+  margin-top: 0.5em;
+  width: 90%;
+}
+
 
 #footer {
   text-align: center;
