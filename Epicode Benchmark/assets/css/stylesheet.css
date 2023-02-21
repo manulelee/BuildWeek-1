@@ -37,9 +37,7 @@ p {
 
 #pulsante {
   margin: 0;
-  float: right;
-  margin-top: 20%;
-  margin-right: 5%;
+
   box-shadow: -1px 0px 15px 5px #00ffff;
   border-style: none;
   background-color: #00ffff;
@@ -170,3 +168,26 @@ p {
 #stars img {
   filter: grayscale(100%);
 }
+#comment{
+
+  background-color: transparent;
+  outline:none;
+  border-style: initial;
+  width: 100%;
+
+}
+#centraAll{
+  text-align: center;
+  margin-right: 15%;
+  margin-left: 15%;
+ 
+}
+#allineamento{
+border-bottom: solid;
+text-align:start;
+vertical-align: bottom;
+color: #900080;
+margin-bottom: 5%;
+margin-top: 5%;
+}
+
