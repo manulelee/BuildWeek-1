@@ -124,6 +124,14 @@ h1 {
   margin-left: 6%;
 }
 
+
+#stars img {
+  filter: grayscale(100%);
+}
+.clicked {
+  filter: none !important;
+}
+
 #result, #message, #correct, #wrong
 {
     display: inline-block;
@@ -207,3 +215,4 @@ h1 {
     padding-top:10px ;
     padding-bottom: 10px;
     }
+
