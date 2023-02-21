@@ -122,3 +122,9 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+#stars img {
+  filter: grayscale(100%);
+}
+.clicked {
+  filter: none !important;
+}
