@@ -100,7 +100,7 @@ const questions = [
 
 const opContainer = document.getElementById("option");
 let answers = [];
-let dioPorco = [];
+
 var infoQ;
 //
  //seleziona tutti i campi di imput
