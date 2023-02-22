@@ -99,8 +99,20 @@ p {
   width: 24px;
   height: 24px;
 }
-
-#pulsante {
+.disabled{
+  margin: 0;
+  box-shadow: -1px 0px 15px 5px #00ffff;
+  border-style: none;
+  background-color: #6c9090;
+  font-weight: 800;
+  font-size: 19px;
+  padding: 10px 30px;
+  
+  color: #0b1f47;
+  width: 178.96px;
+  height: 50px;
+}
+.pulsante {
   margin: 0;
   box-shadow: -1px 0px 15px 5px #00ffff;
   border-style: none;

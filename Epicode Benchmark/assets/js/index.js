@@ -1,30 +1,27 @@
-let btn = document.getElementById('WPbtn');
-let checked = false;
+let chechbox = document.getElementById('demo_opt_1');
+
 let btnProceed = document.getElementById("pulsante")
 
-btn.addEventListener('click,', function() {
-    btnProceed.disabled=true;
-    checked=true;
-})
+btnProceed.disabled = true;
+btnProceed.classList.add('disabled')
 
-function check(){
-    
-    
-    if (checked == false){
-        
-    btnProceed.disabled = true;
-}else{
+
+
+chechbox.addEventListener('click',function(){
+
+    btnProceed.classList.remove('disabled');
+    btnProceed.classList.add('pulsante');
     btnProceed.disabled = false;
-
-}}
-
-check();
-const fatto=function(event){
-   
-    if(event.target.className=="fatto")
-    {
-        event.target.classList.remove('fatto');
+    controllo()    
+})
+function controllo(){
+    if (chechbox.checked == true){
+        btnProceed.classList.remove('disabled');
+    btnProceed.classList.add('pulsante');
+    btnProceed.disabled = false;
     }else{
-          event.target.classList.add('fatto');
+        btnProceed.classList.remove('pulsante');
+        btnProceed.classList.add('disabled');
+        btnProceed.disabled = true;
     }
 }
