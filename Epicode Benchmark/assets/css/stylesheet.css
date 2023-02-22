@@ -387,3 +387,36 @@ h2 {
 .clicked {
   filter: none !important;
 }
+
+#RWcontainer{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#allineamento{
+  margin: 2em auto;
+}
+
+#stars{
+  margin-bottom: 4em;
+  letter-spacing: 0.5em;
+}
+
+.RWp{
+  font-size:23px;
+  margin:1em;
+}
+
+#RWstring{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.allineamento2{
+  width: 75%;
+    padding: 0.5em;
+}
+
+#comment{
+  margin-left:2em;
+}
