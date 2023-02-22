@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/stylesheet.css" />
-    <style></style>
-    <title>Review</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  <style></style>
+  <title>Review</title>
+</head>
+
+<body>
+  
+<div id="container1">
+  <header>
+    <img src="assets/img/epicode_logo.png" id="logo1" />
+  </header>
+  <div id="centraAll">
+<div id="RWcontainer">
     <h1>Tell us how it's going</h1>
-    <p>from 0 to 10, how likely are you to reccomend EPICODE to a friend ora a colleague?</p>
+    <div id="RWstring">
+    <p class="RWp">
+      From 0 to 10, how likely are you to reccomend EPICODE to a friend ora a colleague? 
+    </p>
     <p id="stars">
       <img id="1" value="1" src="assets/img/star.svg" />
       <img id="2" value="2" src="assets/img/star.svg" />
@@ -23,17 +35,18 @@
       <img id="9" value="9" src="assets/img/star.svg" />
       <img id="10" value="10" src="assets/img/star.svg" />
     </p>
-    <p>Leave us an open deeback about your experience so far</p>
+    <p class="RWp">Leave us an open deeback about your experience so far</p>
+  </div>
     <form>
-      <input
-        type="text"
-        name="comment"
-        id="comment"
-        placeholder="Write your comment
-        here"
-      />
+      <div id="allineamento" class="allineamento2">
+        <input type="text" name="comment" id="comment" placeholder="Write your comment here" />
+      </div>
     </form>
-    <button>MORE INFO</button>
-    <script src="assets/js/review.js"></script>
-  </body>
+    <button id="pulsante">MORE INFO</button>
+</div>
+  </div>
+  </div>
+  <script src="assets/js/review.js"></script>
+</body>
+
 </html>
