@@ -1,11 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
-  background-image: url(../img/bg.jpg);
-  background-size: 100vh;
-  background-size: 100vw;
-  font-family: "Noto Sans", sans-serif;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 16px;
+  word-spacing: 1px;
 }
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
 .logo {
   margin-top: 2%;
   margin-left: 3%;
@@ -14,14 +25,12 @@ body {
 
 h1 {
   color: white;
-  margin-left: 3%;
   font-size: 60px;
   margin-bottom: 2%;
   word-spacing: 1;
 }
 
 h3 {
-  margin-left: 3%;
   font-size: 16px;
   color: #d20094;
   font-weight: bolder;
@@ -29,26 +38,6 @@ h3 {
 
 p {
   color: white;
-  margin-left: 3%;
-}
-
-#pulsante {
-  margin: 0;
-  float: right;
-  margin-top: 20%;
-  margin-right: 5%;
-  box-shadow: -1px 0px 15px 5px #00ffff;
-  border-style: none;
-  background-color: #00ffff;
-  font-weight: bolder;
-  font-size: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
-  margin-bottom: 1%;
 }
 
 #pulsanteQuiz {
@@ -94,3 +83,65 @@ p {
   margin-left: 10%;
   margin-right: 10%;
 }
+/*CSS index */
+#container1 {
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+#logo1 {
+  width: 120px;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+
+#wPTitle{
+  margin-bottom: 2.4em;
+  letter-spacing: 3px;
+}
+
+#WPh1{
+  line-height: 0.8em;
+ }
+
+ #WPwelcome {
+  font-weight: 300;
+}
+
+#WPinstr{
+  font-weight: 600;
+  color:#D20094;
+  font-size: 24px;
+}
+
+#WPp{
+  margin-bottom: 3.2em;
+  margin-top: 0.5em;
+  width: 550px;
+}
+
+#WPul{
+  padding-left: 1.7em;
+  margin-bottom: 4em;
+  letter-spacing: 0.03em;
+}
+
+#WPbtn{
+  background: transparent;
+  outline: none;
+  border:2.7px solid white;
+  width:24px;
+  height:24px;
+}
+
+#pulsante {
+  margin: 0;
+  box-shadow: -1px 0px 15px 5px #00ffff;
+  border-style: none;
+  background-color: #00ffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #0b1f47;
+} 
