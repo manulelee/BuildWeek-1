@@ -3,18 +3,18 @@
 
 body {
   background-image: url(../img/bg.jpg);
-  background-size: 100vh;
-  background-size: 100vw;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   font-family: 'Inter', sans-serif;
   color: white;
   font-size: 16px;
+  box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Outfit', sans-serif;
 }
-#rwStringi{
 
-}
 .logo {
   margin-top: 24px;
   width: 150px;
@@ -143,6 +143,7 @@ p {
   align-items: center;
 }
 #containerResult{
+  box-sizing: border-box;
 margin:0 auto;
   width:80% ;
 }
@@ -234,6 +235,7 @@ margin-top: 5%;
 
 #result>h2{
   margin-bottom: 0px;
+  margin:0 auto;
  
 }
 #result>h3{
