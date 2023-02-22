@@ -8,17 +8,24 @@
     <title>appoggio domande</title>
   </head>
   <body>
-    <div id="question_box">
-      <h3 id="question">domanda</h3>
-      <!-- qua sta la domanda-->
-      <div id="option">
-        <!-- qua stanno le risposte-->
-      </div>
-      <div id="div_procedi">
-        <button disabled="true" onclick="valutazione(),test()" type="button" id="succ">procedi</button>
+    <div id="container1">
+      <header>
+        <img src="assets/img/epicode_logo.png" id="logo1" />
+      </header>
+
+      <div id="question_box">
+        <div id="domanda">
+          <h3 clsss="quiz" id="exam">domanda</h3>
+        </div>
+        <!-- qua sta la domanda-->
+        <div id="option">
+          <!-- qua stanno le risposte-->
+        </div>
+        <div id="div_procedi">
+          <button id="pulsante" disabled="true" onclick="valutazione(),test()" type="button">NEXT</button>
+        </div>
       </div>
     </div>
-
     <script src="assets/js/question.js"></script>
   </body>
 </html>

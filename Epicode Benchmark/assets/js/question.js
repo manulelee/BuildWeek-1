@@ -83,7 +83,7 @@ const questions = [
 ];
 
 var randomNums = [];
-var procedi = document.getElementById("succ");
+var procedi = document.getElementById("pulsante");
 let i = 0;
 var scelta;
 var selezionato = false; // SEMAFORO - verifica che almeno un campo e` selezionato
@@ -105,7 +105,7 @@ const nq = function () {
 
 //2) creazione domanda ok
 const creazioneDomanda = function () {
-  document.getElementById("question").innerHTML = questions[randomNums[i]].question;
+  document.getElementById("exam").innerHTML = questions[randomNums[i]].question;
 };
 
 //3) creazione opzioni opzioni risposte ok
@@ -115,15 +115,15 @@ function creazioneRisposte() {
   option.innerHTML = "";
   answers = questions[randomNums[i]].incorrect_answers;
   answers.unshift(questions[randomNums[i]].correct_answer);
+  // da creare random numeri per mischiare le risposte
   let k = 0;
   procedi.removeAttribute("hidden");
   procedi.setAttribute("disabled", "disabled");
   answers.forEach((element) => {
-    option.innerHTML += ` <input onclick="check()" type="radio" name="risposta" id="${k}" 
-        value="${element}"> <label for="risposta"> ${element}</label>`;
+    option.innerHTML += `<span class="mySpan"><input onclick="check()"  type="radio" name="risposta" id="${k}" 
+        value="${element}"><label for="${k}" class="pulsanteQuiz"> ${element}</label></span>`;
     k++;
   });
-  document.getElementById("question_box").appendChild(option);
   return answers;
 }
 
@@ -135,7 +135,7 @@ function check() {
       selezionato = true;
       procedi.removeAttribute("disabled");
       scelta = document.querySelector("input:checked").value;
-      //console.log(scelta);
+      console.log(scelta);
       if (scelta == questions[randomNums[i]].correct_answer) {
         score = 1;
       } else {
@@ -156,8 +156,8 @@ function valutazione() {
 // rimozione di tutti i campi
 function clear() {
   document.getElementById("option").innerHTML = "";
-  document.getElementById("question").innerHTML = " ";
-  procedi.setAttribute("hidden", "hidden");
+  document.getElementById("exam").innerHTML = " ";
+  procedi.setAttribute("visibility", "hidden");
   answers = [];
   selezionato = false;
 }
@@ -180,9 +180,11 @@ function test() {
     creazioneDomanda();
     creazioneRisposte();
     check();
+    //CREARE IL TIMER
   } else {
     clear();
 
+    //prendere il bottone e creare il link per la pagina 3 (CON URL SEARCH PARAMS)
     setTimeout(alert("hai finito"), 10000);
   }
 }
