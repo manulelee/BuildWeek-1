@@ -1,11 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
-  background-image: url(../img/bg.jpg);
-  background-size: 100vh;
-  background-size: 100vw;
-  font-family: "Noto Sans", sans-serif;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 16px;
+  word-spacing: 1px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
 .logo {
   margin-top: 2%;
   margin-left: 3%;
@@ -14,14 +30,12 @@ body {
 
 h1 {
   color: white;
-  margin-left: 3%;
   font-size: 60px;
   margin-bottom: 2%;
   word-spacing: 1;
 }
 
 h3 {
-  margin-left: 3%;
   font-size: 16px;
   color: #d20094;
   font-weight: bolder;
@@ -29,26 +43,6 @@ h3 {
 
 p {
   color: white;
-  margin-left: 3%;
-}
-
-#pulsante {
-  margin: 0;
-  float: right;
-  margin-top: 20%;
-  margin-right: 5%;
-  box-shadow: -1px 0px 15px 5px #00ffff;
-  border-style: none;
-  background-color: #00ffff;
-  font-weight: bolder;
-  font-size: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
-  margin-bottom: 1%;
 }
 
 #pulsanteQuiz {
@@ -78,6 +72,7 @@ p {
   align-items: center;
   align-content: center;
 }
+
 #sec {
   margin: 0.5em;
   gap: 1, 5em;
@@ -86,11 +81,148 @@ p {
   align-items: center;
   align-content: center;
 }
+
 #exam {
   text-align: center;
   font-size: 60px;
 }
+
 #centra {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+/*CSS index */
+#container1 {
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+#logo1 {
+  width: 120px;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+
+#wPTitle {
+  margin-bottom: 2.4em;
+  letter-spacing: 3px;
+}
+
+#WPh1 {
+  line-height: 0.8em;
+  letter-spacing: 1px;
+  font-size: 80px;
+  margin-top: 20px;
+}
+
+#WPwelcome {
+  font-weight: 300;
+}
+
+#WPinstr {
+  font-weight: 600;
+  color: #D20094;
+  font-size: 30px;
+  margin-bottom: 0.1px;
+}
+
+#WPp {
+  margin-bottom: 3.2em;
+  margin-top: 0.3em;
+  width: 550px;
+}
+
+#WPul {
+  padding-left: 1.7em;
+  margin-bottom: 4em;
+  letter-spacing: 0.03em;
+}
+
+#WPbtn {
+  background: transparent;
+  outline: none;
+  border: 2.7px solid white;
+  width: 24px;
+  height: 24px;
+}
+
+#pulsante {
+  margin: 0;
+  box-shadow: -1px 0px 15px 5px #00ffff;
+  border-style: none;
+  background-color: #00ffff;
+  font-weight: 800;
+  font-size: 19px;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #0b1f47;
+  width:178.96px;
+  height:50px;
+}
+
+.css-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+#inputPreview {
+  display: flex;
+}
+
+.css-checkbox+label {
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+}
+
+.css-checkbox+label::before {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(12, 18, 58);
+  border: 4px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  box-shadow: rgba(42, 42, 42, 0.6) 0px 0px 5px 0px inset;
+}
+
+.css-checkbox:checked+label::after {
+  content: " ";
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+");
+  background-size: 20px 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  background-color: transparent;
+  font-size: px;
+  height: 35px;
+  width: 30px;
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+}
+
+#WPlink{
+  margin-left: 23%;
+}
+
+
+#WPstring{
+  margin-left: 1.2em;
 }
