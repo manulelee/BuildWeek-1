@@ -82,14 +82,14 @@ const questions = [
   },
 ];
 
-
 var randomNums = [];
 var procedi = document.getElementById("pulsanti");
 let i = 0;
-var incorrect=0;
+var incorrect = 0;
 var scelta;
 var selezionato = false; // SEMAFORO - verifica che almeno un campo e` selezionato
 var score = 0;
+var incorrect = 0;
 var totale = 0;
 
 // 1) generazione numero casuale ok
@@ -108,6 +108,7 @@ const nq = function () {
 //2) creazione domanda ok
 const creazioneDomanda = function () {
   document.getElementById("exam").innerHTML = questions[randomNums[i]].question;
+  document.getElementById("contatoreDomanda").innerHTML = `QUESTION ${i + 1}<span> / 10</span>`;
 };
 
 //3) creazione opzioni opzioni risposte ok
@@ -170,33 +171,31 @@ nq();
 
 // esecuzione del codice ok
 
-
-
-function timer(){
+function timer() {
   const FULL_DASH_ARRAY = 283;
   const WARNING_THRESHOLD = 10;
   const ALERT_THRESHOLD = 5;
-  
+
   const COLOR_CODES = {
     info: {
-      color: "green"
+      color: "green",
     },
     warning: {
       color: "orange",
-      threshold: WARNING_THRESHOLD
+      threshold: WARNING_THRESHOLD,
     },
     alert: {
       color: "red",
-      threshold: ALERT_THRESHOLD
-    }
+      threshold: ALERT_THRESHOLD,
+    },
   };
-  
+
   const TIME_LIMIT = 5;
   let timePassed = 0;
   let timeLeft = TIME_LIMIT;
   let timerInterval = null;
   let remainingPathColor = COLOR_CODES.info.color;
-  
+
   document.getElementById("timer").innerHTML = `
   <div class="base-timer">
     <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -215,90 +214,69 @@ function timer(){
         ></path>
       </g>
     </svg>
-    <span id="base-timer-label" class="base-timer__label">${formatTime(
-      timeLeft
-    )}</span>
+    <span id="base-timer-label" class="base-timer__label">${formatTime(timeLeft)}</span>
   </div>
   `;
   startTimer();
 
-  procedi.addEventListener("click",function(){
+  procedi.addEventListener("click", function () {
     clearInterval(timerInterval);
-  })
-    
+  });
 
   function onTimesUp() {
     clearInterval(timerInterval);
     clear();
     valutazione();
-    console.log("Risposte sbagliate:"+incorrect);
+    console.log("Risposte sbagliate:" + incorrect);
     test();
   }
-  
+
   function startTimer() {
     timerInterval = setInterval(() => {
       timePassed = timePassed += 1;
       timeLeft = TIME_LIMIT - timePassed;
-      document.getElementById("base-timer-label").innerHTML = formatTime(
-        timeLeft
-      );
+      document.getElementById("base-timer-label").innerHTML = formatTime(timeLeft);
       setCircleDasharray();
       setRemainingPathColor(timeLeft);
-  
+
       if (timeLeft === 0) {
         onTimesUp();
-       
       }
-  
     }, 1000);
   }
-  
+
   function formatTime(time) {
     const minutes = Math.floor(time / 60);
     let seconds = time % 60;
-  
+
     if (seconds < 10) {
       seconds = `0${seconds}`;
     }
-  
+
     return `<div class="piccolo">SECONDS</div><span id="seconds">${seconds}</span><div class="piccolo">REMANING</div>`;
   }
-  
+
   function setRemainingPathColor(timeLeft) {
     const { alert, warning, info } = COLOR_CODES;
     if (timeLeft <= alert.threshold) {
-      document
-        .getElementById("base-timer-path-remaining")
-        .classList.remove(warning.color);
-      document
-        .getElementById("base-timer-path-remaining")
-        .classList.add(alert.color);
+      document.getElementById("base-timer-path-remaining").classList.remove(warning.color);
+      document.getElementById("base-timer-path-remaining").classList.add(alert.color);
     } else if (timeLeft <= warning.threshold) {
-      document
-        .getElementById("base-timer-path-remaining")
-        .classList.remove(info.color);
-      document
-        .getElementById("base-timer-path-remaining")
-        .classList.add(warning.color);
+      document.getElementById("base-timer-path-remaining").classList.remove(info.color);
+      document.getElementById("base-timer-path-remaining").classList.add(warning.color);
     }
   }
-  
+
   function calculateTimeFraction() {
     const rawTimeFraction = timeLeft / TIME_LIMIT;
     return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
   }
-  
+
   function setCircleDasharray() {
-    const circleDasharray = `${(
-      calculateTimeFraction() * FULL_DASH_ARRAY
-    ).toFixed(0)} 283`;
-    document
-      .getElementById("base-timer-path-remaining")
-      .setAttribute("stroke-dasharray", circleDasharray);
+    const circleDasharray = `${(calculateTimeFraction() * FULL_DASH_ARRAY).toFixed(0)} 283`;
+    document.getElementById("base-timer-path-remaining").setAttribute("stroke-dasharray", circleDasharray);
   }
 }
-
-
 
 function test() {
   nq();
@@ -311,6 +289,11 @@ function test() {
     //CREARE IL TIMER
   } else {
     clear();
+    incorrect = questions.length - totale;
+    document.getElementById("contatoreDomanda").innerHTML = "";
+    document.getElementById(
+      "div_procedi"
+    ).innerHTML = `<a href="result.html?correct=${totale}&incorrect=${incorrect}"><button id="pulsanti2">SHOW MY RESULT</button></a>`;
   }
 }
 

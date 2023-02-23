@@ -205,7 +205,19 @@ p {
 #WPstring {
   margin-left: 1.2em;
 }
-
+#pulsanti2 {
+  margin: 0;
+  box-shadow: -1px 0px 15px 5px #00ffff;
+  border-style: none;
+  background-color: #00ffff;
+  font-weight: 800;
+  font-size: 19px;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #0b1f47;
+  width: 178.96px;
+  height: 100px;
+}
 /*result*/
 #buttonRate {
   margin: 0;
@@ -444,6 +456,20 @@ input[type="radio"] {
   margin: 0 auto;
   margin-top: 3em;
   height: 200px;
+}
+#contatoreDomanda {
+  text-align: center;
+  margin-top: 4em;
+  font-weight: 500;
+}
+#contatoreDomanda span {
+  color: #c105ab;
+}
+footer {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
 }
 
 

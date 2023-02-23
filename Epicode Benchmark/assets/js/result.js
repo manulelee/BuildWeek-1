@@ -1,14 +1,21 @@
+let params = new URLSearchParams(location.search);
+let correctAnswers = params.get("correct");
+let incorrectAnswers = params.get("incorrect");
+
+//console.log(correctAnswers);
+//console.log(incorrectAnswers);
+
 let correct = document.getElementById("correct");
 let wrong = document.getElementById("wrong");
 let message = document.getElementById("message");
-let countCorrect = 7;
-let countWrong = 5;
-let countpercCorrect = (countCorrect / 12) * 100;
+let countCorrect = correctAnswers;
+let countWrong = incorrectAnswers;
+let countpercCorrect = (countCorrect / 10) * 100;
 countpercCorrect = countpercCorrect.toFixed(2);
 console.log(countpercCorrect);
 //let countpercCorrect = ((countCorrect/questions.length)*100)
 //let countperWrong = ((countWrong/questions.length)*100)
-let countperWrong = (countWrong / 12) * 100;
+let countperWrong = (countWrong / 10) * 100;
 countperWrong = countperWrong.toFixed(2);
 console.log(countperWrong);
 
