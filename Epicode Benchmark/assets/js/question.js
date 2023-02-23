@@ -83,7 +83,7 @@ const questions = [
 ];
 
 var randomNums = [];
-var procedi = document.getElementById("pulsante");
+var procedi = document.getElementById("pulsanti");
 let i = 0;
 var scelta;
 var selezionato = false; // SEMAFORO - verifica che almeno un campo e` selezionato
