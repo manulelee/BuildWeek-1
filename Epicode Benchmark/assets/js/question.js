@@ -132,6 +132,7 @@ function creazioneRisposte() {
 
 // controllo radio e punteggio domanda ok
 function check() {
+  score = 0;
   let risposte = document.querySelectorAll("input");
   risposte.forEach((element) => {
     if (element.checked == true) {
@@ -152,7 +153,7 @@ function check() {
 // calcolo del punteggio totale ok
 function valutazione() {
   totale += score;
-  console.log("totale " + totale);
+  console.log("totale corrette" + totale);
   i++;
 }
 
@@ -227,7 +228,6 @@ function timer() {
     clearInterval(timerInterval);
     clear();
     valutazione();
-    console.log("Risposte sbagliate:" + incorrect);
     test();
   }
 
@@ -288,6 +288,7 @@ function test() {
     check();
     //CREARE IL TIMER
   } else {
+    console.log(totale);
     clear();
     incorrect = questions.length - totale;
     document.getElementById("contatoreDomanda").innerHTML = "";
@@ -295,6 +296,7 @@ function test() {
       "div_procedi"
     ).innerHTML = `<a href="result.html?correct=${totale}&incorrect=${incorrect}"><button id="pulsanti2">SHOW MY RESULT</button></a>`;
   }
+  clearInterval(timerInterval);
 }
 
 test();
