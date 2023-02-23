@@ -457,6 +457,20 @@ input[type="radio"] {
   margin-top: 3em;
   height: 200px;
 }
+#contatoreDomanda {
+  text-align: center;
+  margin-top: 4em;
+  font-weight: 500;
+}
+#contatoreDomanda span {
+  color: #c105ab;
+}
+footer {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
+}
 
 /*review*/
 #stars img {

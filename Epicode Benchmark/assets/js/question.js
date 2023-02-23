@@ -107,6 +107,7 @@ const nq = function () {
 //2) creazione domanda ok
 const creazioneDomanda = function () {
   document.getElementById("exam").innerHTML = questions[randomNums[i]].question;
+  document.getElementById("contatoreDomanda").innerHTML = `QUESTION ${i + 1}<span> / 10</span>`;
 };
 
 //3) creazione opzioni opzioni risposte ok
@@ -176,7 +177,7 @@ nq();
 
 function test() {
   nq();
-  if (i < 2 /*questions.length*/) {
+  if (i < questions.length) {
     clear();
     creazioneDomanda();
     creazioneRisposte();
@@ -185,12 +186,10 @@ function test() {
   } else {
     clear();
     incorrect = questions.length - totale;
-    console.log(incorrect);
-    console.log(totale);
+    document.getElementById("contatoreDomanda").innerHTML = "";
     document.getElementById(
       "div_procedi"
     ).innerHTML = `<a href="result.html?correct=${totale}&incorrect=${incorrect}"><button id="pulsanti2">SHOW MY RESULT</button></a>`;
-    setTimeout(alert("hai finito"), 10000);
   }
 }
 
