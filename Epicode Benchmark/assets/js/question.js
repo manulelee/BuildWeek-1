@@ -88,6 +88,7 @@ let i = 0;
 var scelta;
 var selezionato = false; // SEMAFORO - verifica che almeno un campo e` selezionato
 var score = 0;
+var incorrect = 0;
 var totale = 0;
 
 // 1) generazione numero casuale ok
@@ -175,7 +176,7 @@ nq();
 
 function test() {
   nq();
-  if (i < questions.length) {
+  if (i < 2 /*questions.length*/) {
     clear();
     creazioneDomanda();
     creazioneRisposte();
@@ -183,8 +184,12 @@ function test() {
     //CREARE IL TIMER
   } else {
     clear();
-
-    //prendere il bottone e creare il link per la pagina 3 (CON URL SEARCH PARAMS)
+    incorrect = questions.length - totale;
+    console.log(incorrect);
+    console.log(totale);
+    document.getElementById(
+      "div_procedi"
+    ).innerHTML = `<a href="result.html?correct=${totale}&incorrect=${incorrect}"><button id="pulsanti2">SHOW MY RESULT</button></a>`;
     setTimeout(alert("hai finito"), 10000);
   }
 }

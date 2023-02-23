@@ -205,7 +205,19 @@ p {
 #WPstring {
   margin-left: 1.2em;
 }
-
+#pulsanti2 {
+  margin: 0;
+  box-shadow: -1px 0px 15px 5px #00ffff;
+  border-style: none;
+  background-color: #00ffff;
+  font-weight: 800;
+  font-size: 19px;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #0b1f47;
+  width: 178.96px;
+  height: 100px;
+}
 /*result*/
 #buttonRate {
   margin: 0;

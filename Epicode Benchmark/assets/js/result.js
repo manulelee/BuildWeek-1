@@ -1,4 +1,11 @@
-let correct = document.getElementById("correct");
+let params = new URLSearchParams(location.search);
+let correct = params.get("correct");
+let incorrect = params.get("incorrect");
+
+console.log(correct);
+console.log(incorrect);
+
+//let correct = document.getElementById("correct");
 let wrong = document.getElementById("wrong");
 let message = document.getElementById("message");
 let countCorrect = 7;
