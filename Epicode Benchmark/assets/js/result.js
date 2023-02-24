@@ -8,14 +8,14 @@ let incorrectAnswers = params.get("incorrect");
 let correct = document.getElementById("correct");
 let wrong = document.getElementById("wrong");
 let message = document.getElementById("msg-content");
-let countCorrect = correctAnswers;
-let countWrong = incorrectAnswers;
-let countpercCorrect = (countCorrect / 10) * 100;
+
+let totalAnswers = parseInt(correctAnswers) + parseInt(incorrectAnswers);
+let countpercCorrect = (correctAnswers / totalAnswers) * 100;
 countpercCorrect = countpercCorrect.toFixed(2);
 console.log(countpercCorrect);
 //let countpercCorrect = ((countCorrect/questions.length)*100)
 //let countperWrong = ((countWrong/questions.length)*100)
-let countperWrong = (countWrong / 10) * 100;
+let countperWrong = (incorrectAnswers / totalAnswers) * 100;
 countperWrong = countperWrong.toFixed(2);
 console.log(countperWrong);
 
@@ -29,17 +29,17 @@ function stamp() {
 
                         <h3>${countpercCorrect}%</h3>
 
-                        <p>${countCorrect}/10 question</p>`;
+                        <p>${correctAnswers}/${totalAnswers} question</p>`;
   wrong.innerHTML = ` <h2>Wrong</h2>
 
                         <h3>${countperWrong}%</h3>
 
-                        <p>${countWrong}/10 question</p>`;
+                        <p>${incorrectAnswers}/${totalAnswers} question</p>`;
 }
 
 function messsagePrint() {
   if (countpercCorrect < 60) {
-    message.innerHTML = `<h4>Oh no!<br>
+    message.innerHTML = `<h4 id="RSfailed">Oh no!<br>
         <span class="wrong">You not passed the exam.</span></h4>`;
   } else {
     message.innerHTML = `<h4 id="RSh4"><span id="congrats">Congratulations!</span><br>
@@ -61,6 +61,6 @@ var bar = new ProgressBar.Circle(torta, {
   svgStyle: null,
 });
 
-var n = incorrectAnswers / 10;
+var n = incorrectAnswers / totalAnswers;
 
 bar.animate(n);

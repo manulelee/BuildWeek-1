@@ -284,7 +284,7 @@ p {
 }
 
 #message {
-position:relative ;
+  position: relative;
   border-radius: 100%;
   width: 360px;
   height: 360px;
@@ -295,17 +295,17 @@ position:relative ;
   min-height: 300px;
 }
 
-#msg-content{
+#msg-content {
   height: 70px;
   position: relative;
   top: 53%;
   width: 60%;
   font-size: 13px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
-#myChart{
-  position:relative;
-  width:300px
+#myChart {
+  position: relative;
+  width: 300px;
 }
 
 #footer {
@@ -383,35 +383,16 @@ h2 {
   font-weight: 300;
 }
 
-.pass{
-  color:#00ffff;
+.pass {
+  color: #00ffff;
   font-weight: 800;
   font-size: 18px;
 }
 
-.wrong{
-  color:#d20094;
+.wrong {
+  color: #d20094;
   font-weight: 800;
 }
-
-#RSlogo{
-  width: 120px;
-  margin-top: 24px;
-  margin-bottom: 21px;
-}
-
-#RSh4{
-  line-height: 17px;
-}
-
-#congrats{
-  font-size: 18px;
-}
-
-#RSfailed{
-  font-size:18px;
-}
-
 
 /*test*/
 
@@ -424,13 +405,13 @@ h2 {
 
 .pulsanteQuiz {
   border: 2px;
-  border-style:outset;
+  border-style: outset;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto !important;
-  background-color: rgba(44,41,86,0.2);
+  background-color: rgba(44, 41, 86, 0.2);
   border-radius: 40px 40px 40px 40px;
   padding: 10px 10px;
   color: white;
@@ -492,9 +473,10 @@ input[type="radio"] {
 }
 #domanda {
   margin: 0 auto;
-  margin-top: 3em;
+  margin-top: 30px;
   height: 200px;
 }
+
 #contatoreDomanda {
   text-align: center;
   margin-top: 4em;
@@ -508,7 +490,6 @@ footer {
   align-items: center;
   display: flex;
 }
-
 
 .base-timer {
   position: relative;
@@ -537,17 +518,16 @@ footer {
   stroke: currentColor;
 }
 
-
 .base-timer__path-remaining.green {
-  color:#00ffff;
+  color: #00ffff;
 }
 
 .base-timer__path-remaining.orange {
-  color:#00ffff;
+  color: #00ffff;
 }
 
 .base-timer__path-remaining.red {
-  color:#00ffff;
+  color: #00ffff;
 }
 
 .base-timer__label {
@@ -556,17 +536,17 @@ footer {
   height: 150px;
   top: 0;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 1em;
 }
 
-.piccolo{
+.piccolo {
   font-size: 0.6em;
-  font-weight:bold;
+  font-weight: bold;
 }
-#timer{
+#timer {
   display: flex;
   justify-content: flex-end;
 }
@@ -576,7 +556,7 @@ footer {
   margin-top: 24px;
 }
 
-#seconds{
+#seconds {
   font-size: 2.7em;
 }
 
