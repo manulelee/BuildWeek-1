@@ -286,11 +286,11 @@ p {
 #message {
 position:relative ;
   border-radius: 100%;
-  width: 250px;
-  height: 250px;
+  width: 360px;
+  height: 360px;
   margin: 2em;
   float: none;
-  padding: 2em;
+  /*padding: 2em;*/
   min-width: 300px;
   min-height: 300px;
 }
@@ -298,7 +298,7 @@ position:relative ;
 #msg-content{
   height: 70px;
   position: relative;
-  top: 55%;
+  top: 53%;
   width: 60%;
   font-size: 13px;
     margin: 0 auto;
@@ -386,11 +386,30 @@ h2 {
 .pass{
   color:#00ffff;
   font-weight: 800;
+  font-size: 18px;
 }
 
 .wrong{
   color:#d20094;
   font-weight: 800;
+}
+
+#RSlogo{
+  width: 120px;
+  margin-top: 24px;
+  margin-bottom: 21px;
+}
+
+#RSh4{
+  line-height: 17px;
+}
+
+#congrats{
+  font-size: 18px;
+}
+
+#RSfailed{
+  font-size:18px;
 }
 
 
@@ -485,10 +504,9 @@ input[type="radio"] {
   color: #c105ab;
 }
 footer {
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 
@@ -566,8 +584,8 @@ footer {
   position: relative;
   bottom: 24%;
   margin: 0 auto;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
 }
 
 /*review*/

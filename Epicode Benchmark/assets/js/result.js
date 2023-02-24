@@ -39,10 +39,10 @@ function stamp() {
 
 function messsagePrint() {
   if (countpercCorrect <= 60) {
-    message.innerHTML = `<h4>Oh no!<br>
+    message.innerHTML = `<h4 id="RSfailed">Oh no!<br>
         <span class="wrong">You not passed the exam.</span></h4>`;
   } else {
-    message.innerHTML = `<h4>Congratulation!<br>
+    message.innerHTML = `<h4 id="RSh4"><span id="congrats">Congratulations!</span><br>
         <span class="pass">You passed the exam.</span></h4>
 <p>
 we'll send you the certificate in few minutes.Check your
