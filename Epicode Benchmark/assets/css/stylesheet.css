@@ -394,6 +394,24 @@ h2 {
   font-weight: 800;
 }
 
+#RSlogo {
+  width: 120px;
+  margin-top: 24px;
+  margin-bottom: 21px;
+}
+
+#RSh4 {
+  line-height: 17px;
+}
+
+#congrats {
+  font-size: 18px;
+}
+
+#RSfailed {
+  font-size: 18px;
+}
+
 /*test*/
 
 #option {
@@ -486,9 +504,10 @@ input[type="radio"] {
   color: #c105ab;
 }
 footer {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
 }
 
 .base-timer {
@@ -564,8 +583,8 @@ footer {
   position: relative;
   bottom: 24%;
   margin: 0 auto;
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 }
 
 /*review*/
