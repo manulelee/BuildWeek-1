@@ -38,8 +38,8 @@ function stamp() {
 }
 
 function messsagePrint() {
-  if (countpercCorrect <= 60) {
-    message.innerHTML = `<h4 id="RSfailed">Oh no!<br>
+  if (countpercCorrect < 60) {
+    message.innerHTML = `<h4>Oh no!<br>
         <span class="wrong">You not passed the exam.</span></h4>`;
   } else {
     message.innerHTML = `<h4 id="RSh4"><span id="congrats">Congratulations!</span><br>
@@ -51,18 +51,16 @@ email (including promotion / spam folder)
   }
 }
 
-
-
 var bar = new ProgressBar.Circle(torta, {
   strokeWidth: 13,
-  easing: 'easeInOut',
+  easing: "easeInOut",
   duration: 1500,
-  color: '#d20094',
-  trailColor:'#00ffff',
+  color: "#d20094",
+  trailColor: "#00ffff",
   trailWidth: 13,
-  svgStyle: null
+  svgStyle: null,
 });
 
-var n=(incorrectAnswers/10);
+var n = incorrectAnswers / 10;
 
 bar.animate(n);
