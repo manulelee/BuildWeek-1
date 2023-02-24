@@ -140,13 +140,13 @@ function check() {
       selezionato = true;
       procedi.removeAttribute("disabled");
       scelta = document.querySelector("input:checked").value;
-      console.log(scelta);
+      //console.log(scelta);
       if (scelta == questions[randomNums[i]].correct_answer) {
         score = 1;
       } else {
         score = 0;
       }
-      console.log(`Punteggio della domanda ${i + 1}: ${score}`);
+      //console.log(`Punteggio della domanda ${i + 1}: ${score}`);
     }
   });
 }
@@ -154,7 +154,7 @@ function check() {
 // calcolo del punteggio totale ok
 function valutazione() {
   totale += score;
-  console.log("totale corrette" + totale);
+  //console.log("totale corrette" + totale);
   i++;
 }
 
@@ -289,7 +289,7 @@ function test() {
     check();
     //CREARE IL TIMER
   } else {
-    console.log(totale);
+    //console.log(`Totale risposte corrette: ${totale}`);
     clear();
     incorrect = questions.length - totale;
     //alert("Quiz terminato");

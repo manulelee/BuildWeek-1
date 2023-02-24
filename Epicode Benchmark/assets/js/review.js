@@ -5,13 +5,13 @@ stars.forEach((element) => {
     "click",
     (rate = (event) => {
       value = parseInt(event.target.id);
-      console.log(event.target);
+      //console.log(event.target);
       stars.forEach((element) => {
         element.classList.remove("clicked");
       });
       for (let i = 0; i < value; i++) {
         stars[i].classList.toggle("clicked");
-        console.log(stars[i]);
+        //console.log(stars[i]);
       }
     })
   );

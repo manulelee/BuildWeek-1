@@ -12,12 +12,12 @@ let message = document.getElementById("msg-content");
 let totalAnswers = parseInt(correctAnswers) + parseInt(incorrectAnswers);
 let countpercCorrect = (correctAnswers / totalAnswers) * 100;
 countpercCorrect = countpercCorrect.toFixed(2);
-console.log(countpercCorrect);
+//console.log(countpercCorrect);
 //let countpercCorrect = ((countCorrect/questions.length)*100)
 //let countperWrong = ((countWrong/questions.length)*100)
 let countperWrong = (incorrectAnswers / totalAnswers) * 100;
 countperWrong = countperWrong.toFixed(2);
-console.log(countperWrong);
+//console.log(countperWrong);
 
 //let countdiffCorrect = (questions.length-countCorrect);
 //let countdiffWrong = (questions.length-countWrong);
