@@ -118,6 +118,7 @@ function creazioneRisposte() {
   option.innerHTML = "";
   answers = questions[randomNums[i]].incorrect_answers;
   answers.unshift(questions[randomNums[i]].correct_answer);
+  answers.sort();
   // da creare random numeri per mischiare le risposte
   let k = 0;
   procedi.removeAttribute("hidden");
@@ -288,15 +289,21 @@ function test() {
     check();
     //CREARE IL TIMER
   } else {
+    /*
     console.log(totale);
     clear();
     incorrect = questions.length - totale;
     document.getElementById("contatoreDomanda").innerHTML = "";
     document.getElementById(
       "div_procedi"
-    ).innerHTML = `<a href="result.html?correct=${totale}&incorrect=${incorrect}"><button id="pulsanti2">SHOW MY RESULT</button></a>`;
+    ).innerHTML = `<a href="result.html?correct=${totale}&incorrect=${incorrect}"><button id="pulsanti2">SHOW MY RESULT</button></a>`;*/
+    console.log(totale);
+    clear();
+    incorrect = questions.length - totale;
+    alert("Quiz terminato");
+    window.location = `result.html?correct=${totale}&incorrect=${incorrect}`;
   }
-  clearInterval(timerInterval);
+  // clearInterval(timerInterval);
 }
 
 test();
