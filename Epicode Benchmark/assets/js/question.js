@@ -191,7 +191,7 @@ function timer() {
     },
   };
 
-  const TIME_LIMIT = 5;
+  const TIME_LIMIT = 59;
   let timePassed = 0;
   let timeLeft = TIME_LIMIT;
   let timerInterval = null;

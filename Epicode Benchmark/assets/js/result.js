@@ -7,7 +7,7 @@ let incorrectAnswers = params.get("incorrect");
 
 let correct = document.getElementById("correct");
 let wrong = document.getElementById("wrong");
-let message = document.getElementById("message");
+let message = document.getElementById("msg-content");
 let countCorrect = correctAnswers;
 let countWrong = incorrectAnswers;
 let countpercCorrect = (countCorrect / 10) * 100;
@@ -40,13 +40,29 @@ function stamp() {
 function messsagePrint() {
   if (countpercCorrect <= 60) {
     message.innerHTML = `<h4>Oh no!<br>
-        <span>You not passed the exam.</span></h4>`;
+        <span class="wrong">You not passed the exam.</span></h4>`;
   } else {
     message.innerHTML = `<h4>Congratulation!<br>
         <span class="pass">You passed the exam.</span></h4>
 <p>
 we'll send you the certificate in few minutes.Check your
-email(including promotion / spam folder)
+email (including promotion / spam folder)
 </p>`;
   }
 }
+
+
+
+var bar = new ProgressBar.Circle(torta, {
+  strokeWidth: 13,
+  easing: 'easeInOut',
+  duration: 1500,
+  color: '#d20094',
+  trailColor:'#00ffff',
+  trailWidth: 13,
+  svgStyle: null
+});
+
+var n=(incorrectAnswers/10);
+
+bar.animate(n);
