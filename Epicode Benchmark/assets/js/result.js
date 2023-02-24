@@ -11,12 +11,12 @@ let message = document.getElementById("msg-content");
 
 let totalAnswers = parseInt(correctAnswers) + parseInt(incorrectAnswers);
 let countpercCorrect = (correctAnswers / totalAnswers) * 100;
-countpercCorrect = countpercCorrect.toFixed(2);
+countpercCorrect = countpercCorrect.toFixed(1);
 //console.log(countpercCorrect);
 //let countpercCorrect = ((countCorrect/questions.length)*100)
 //let countperWrong = ((countWrong/questions.length)*100)
 let countperWrong = (incorrectAnswers / totalAnswers) * 100;
-countperWrong = countperWrong.toFixed(2);
+countperWrong = countperWrong.toFixed(1);
 //console.log(countperWrong);
 
 //let countdiffCorrect = (questions.length-countCorrect);
@@ -45,7 +45,7 @@ function messsagePrint() {
     message.innerHTML = `<h4 id="RSh4"><span id="congrats">Congratulations!</span><br>
         <span class="pass">You passed the exam.</span></h4>
 <p>
-we'll send you the certificate in few minutes.Check your
+We'll send you the certificate in few minutes.Check your
 email (including promotion / spam folder)
 </p>`;
   }
